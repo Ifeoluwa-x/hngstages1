@@ -9,4 +9,4 @@ def home():
     return jsonify({"slackUsername":"Aribo Ifeoluwa", "backend":True, "age":24, "bio":"Hi, My name is Ifeoluwa and i'm a backend developer."})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=33507)
