@@ -13,4 +13,4 @@ SQLAlchemy==1.4.32
 Werkzeug==2.0.3
 WTForms==3.0.1
 gunicorn==19.9.0
-openai==3
+openai==0.25.0
