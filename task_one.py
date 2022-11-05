@@ -23,7 +23,7 @@ class Operate(Enum):
     def getDeets():
         return jsonify({"slackUsername":"Aribo Ifeoluwa", "backend":True, "age":24, "bio":"Hi, My name is Ifeoluwa and i'm a backend developer."})
 
-    @app.route("/",  methods = ['POST'])
+    @app.route("/post",  methods = ['POST'])
     def calculateDeets():
         res = request.json
         values = set(item.name for item in Operate) 
