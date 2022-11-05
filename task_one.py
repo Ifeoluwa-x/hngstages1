@@ -3,6 +3,8 @@ import openai
 from flask import Flask,json,jsonify
 from flask import jsonify,request
 from enum import Enum
+port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
 
@@ -64,4 +66,5 @@ class Operate(Enum):
             
 
 if __name__ == "__main__":
-    app.run(debug=True, port=33507)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
