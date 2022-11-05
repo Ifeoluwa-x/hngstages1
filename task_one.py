@@ -1,3 +1,4 @@
+import os
 import openai
 # from api_secrets import API_KEY
 from flask import Flask,json,jsonify
